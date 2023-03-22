@@ -1,0 +1,104 @@
+.menu {
+  background: linear-gradient(to bottom, #a212ff, #ff00af);
+  height: 70px; }
+
+.logo {
+  width: 70px;
+  height: 50px; }
+
+.search-fav {
+  position: relative;
+  left: 45px;
+  background-color: transparent;
+  border: none; }
+  .search-fav img {
+    width: 40px;
+    height: 40px; }
+
+.login-fav {
+  width: 30px;
+  height: 30px; }
+
+.shop-fav {
+  width: 30px;
+  height: 28px;
+  margin-top: 4px; }
+
+.fav-holder {
+  text-align: center; }
+  .fav-holder span {
+    color: black; }
+
+.products-menu {
+  margin: auto;
+  width: 1000px; }
+  .products-menu ul {
+    background: #a212ff;
+    border-top: 1px solid gray;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: inline-flex;
+    text-align: left;
+    overflow: hidden;
+    padding: 0; }
+    .products-menu ul li {
+      list-style: none;
+      border: 1px solid #b370ff;
+      border-top: none;
+      padding: 10px 50px;
+      background: linear-gradient(to top, #a212ff, #ff00af);
+      cursor: pointer; }
+      .products-menu ul li:hover {
+        background: linear-gradient(to bottom, #bb8fce, #7d3c98); }
+        .products-menu ul li:hover a {
+          color: #ccc; }
+      .products-menu ul li a {
+        color: #fff;
+        text-decoration: none; }
+
+.sub-menu {
+  position: absolute;
+  margin: 10px 0 0 -30px;
+  display: none; }
+  .sub-menu ul {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    padding-right: 25px; }
+    .sub-menu ul:hover {
+      transition: 555ms;
+      padding: 0; }
+      .sub-menu ul:hover ul {
+        margin-right: 77px; }
+    .sub-menu ul li {
+      padding: 10px 50px;
+      display: flex;
+      background: linear-gradient(to top, #a212ff, #ff00af);
+      border: none;
+      text-align: left; }
+      .sub-menu ul li:hover .sub-menu-2 {
+        display: block; }
+
+.products-menu ul {
+  width: 100%; }
+  .products-menu ul li {
+    width: 100%;
+    text-align: center; }
+    .products-menu ul li:hover .sub-menu {
+      display: block; }
+      .products-menu ul li:hover .sub-menu ul {
+        width: 247px; }
+        .products-menu ul li:hover .sub-menu ul li {
+          width: 247px;
+          padding: 10px; }
+
+.sub-menu-2 {
+  display: none;
+  position: absolute;
+  margin: -10px 160px; }
+
+.sub-menu ul li:hover .sub-menu-2 {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,168 @@
+.body {
+  //margin: 10px;
+}
+
+.menu {
+  background: linear-gradient(to bottom, #a212ff, #ff00af);
+  height: 70px;
+}
+
+.logo {
+  width: 70px;
+  height: 50px;
+}
+
+.search-fav {
+  position: relative;
+  left: 45px;
+  background-color: transparent;
+  border: none;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.login-fav {
+  width: 30px;
+  height: 30px;
+}
+
+.shop-fav {
+  width: 30px;
+  height: 28px;
+  margin-top: 4px;
+}
+
+.fav-holder {
+  text-align: center;
+
+  span {
+    color: black;
+  }
+}
+
+.products-menu {
+  margin: auto;
+  width: 1000px;
+
+  ul {
+    background: #a212ff;
+    border-top: 1px solid gray;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: inline-flex;
+    text-align: left;
+    overflow: hidden;
+    padding: 0;
+
+    li {
+      list-style: none;
+      border: 1px solid #b370ff;
+      border-top: none;
+      padding: 10px 50px;
+      background: linear-gradient(to top, #a212ff, #ff00af);
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(to bottom, #bb8fce, #7d3c98);
+
+        a {
+          color: #ccc;
+        }
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.sub-menu {
+  position: absolute;
+  margin: 10px 0 0 -30px;
+  display: none;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    padding-right: 25px;
+
+
+    &:hover {
+      ul {
+        margin-right:77px;
+      }
+
+      transition: 555ms;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px 50px;
+      display: flex;
+      background: linear-gradient(to top, #a212ff, #ff00af);
+      border: none;
+      text-align: left;
+
+      &:hover {
+        .sub-menu-2 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+.products-menu {
+  ul {
+    width: 100%;
+
+    li {
+      width: 100%;
+      text-align: center;
+
+      &:hover {
+        .sub-menu {
+          display: block;
+
+          ul {
+            width: 247px;
+
+            li {
+              width: 247px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub-menu-2 {
+  display: none;
+  position: absolute;
+  margin: -10px 160px;
+}
+
+.sub-menu ul li:hover .sub-menu-2 {
+  display: block;
+}
+.products-menu {
+  ul {
+    .services {
+      .sub-menu {
+
+      }
+    }
+  }
+}
+
